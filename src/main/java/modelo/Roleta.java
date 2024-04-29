@@ -11,7 +11,7 @@ public class Roleta {
     Random geradorNumero;
     // Para Saber quantos números ainda faltam para ser sorteado
     int quantidadeFaltante;
-    //ordenação do sorteio, meramente para exibir qual a posição foi sorteado, primeiro, segundo, etc...
+    // Ordenação do sorteio, meramente para exibir qual a posição foi sorteado, primeiro, segundo, etc...
     int ordem;
 
     public Roleta() {
@@ -61,12 +61,12 @@ public class Roleta {
     }
 
     public void inicializar(int quantidadeNumeroSorteados) {
-        //Esvazia a lista
+        // Esvazia a lista
         listaNumeros.clear();
-        //Para saber quantos números ainda faltam para ser sorteado
+        // Para saber quantos números ainda faltam para ser sorteado
         quantidadeFaltante = 0;
         ordem = 0;
-        //Adiciona os números de 1 até quantidade sorteados na lista
+        // Adiciona os números de 1 até quantidade sorteados na lista
         for (int i = 1; i <= quantidadeNumeroSorteados; i++) {
             listaNumeros.add(i);
         }
@@ -74,7 +74,7 @@ public class Roleta {
     }
 
     public int getNumero() {
-        //Se existe números a serem sorteados então
+        // Se existe números a serem sorteados então
         if (!listaNumeros.isEmpty()) {
             // Pega um número aleatório entre 0 e o valor de quantidadeFaltante
             int indice = geradorNumero.nextInt(quantidadeFaltante);
@@ -92,5 +92,4 @@ public class Roleta {
             return -1;
         }
     }
-
 }

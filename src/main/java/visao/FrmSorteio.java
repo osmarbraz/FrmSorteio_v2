@@ -140,19 +140,19 @@ public class FrmSorteio extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void JBNovoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JBNovoActionPerformed
-        //Recupera a quantidade de números a serem sorteados
+        // Recupera a quantidade de números a serem sorteados
         int quantidadeNumeroSorteados = Integer.parseInt(this.JTFQuantidadeNumerosSorteados.getText());
-        //Limpa o text area
+        // Limpa o text area
         JASaida.setText("");        
-        //Verifica se a quantidade é maior que 0
+        // Verifica se a quantidade é maior que 0
         if (quantidadeNumeroSorteados > 0) {   
-            //Inicializa a roleta com a quantidade de números a serem sorteados
+            // Inicializa a roleta com a quantidade de números a serem sorteados
             roleta.inicializar(quantidadeNumeroSorteados);
-            //Habilita o botão sortear
-            this.JBSortear.setEnabled(true);
-            //Desabilita o botão novo
+            // Desabilita o botão novo
             this.JBNovo.setEnabled(false);
-            //Habilita o botão cancelar
+            // Habilita o botão sortear
+            this.JBSortear.setEnabled(true);            
+            // Habilita o botão cancelar
             this.JBCancelar.setEnabled(true);
         } else {
             JOptionPane.showMessageDialog(null, "Valor deve ser maior que 0!");        
@@ -168,7 +168,7 @@ public class FrmSorteio extends javax.swing.JFrame {
             JASaida.append(roleta.getOrdem() + "º sorteado: " + numero + "\n"); 
             // Mostra o número sorteado por meio do Label
             JLNumerosorteado.setText(numero + "");             
-        } else { //Se acabou os numeros a serem sorteados
+        } else { // Se acabou os numeros a serem sorteados
             JOptionPane.showMessageDialog(null, "Não Há números a serem sorteados \n inicie um novo Sorteio");
             // Habilita o botão novo
             this.JBNovo.setEnabled(true);  
@@ -180,6 +180,7 @@ public class FrmSorteio extends javax.swing.JFrame {
     }//GEN-LAST:event_JBSortearActionPerformed
 
     private void JBFecharActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JBFecharActionPerformed
+        // Encerra a aplicação
         System.exit(0);
     }//GEN-LAST:event_JBFecharActionPerformed
 
