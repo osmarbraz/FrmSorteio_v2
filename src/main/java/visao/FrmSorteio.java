@@ -180,7 +180,7 @@ public class FrmSorteio extends javax.swing.JFrame {
     }//GEN-LAST:event_JBSortearActionPerformed
 
     private void JBFecharActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JBFecharActionPerformed
-        // Encerra a aplicação
+        // Encerra o programa
         System.exit(0);
     }//GEN-LAST:event_JBFecharActionPerformed
 
