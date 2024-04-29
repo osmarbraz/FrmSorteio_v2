@@ -86,7 +86,7 @@ public class Roleta {
             int numeroSorteado = listaNumeros.get(indice);
             // Remove o número da lista
             listaNumeros.remove(indice);
-            //Retorna o número sorteado
+            // Retorna o número sorteado
             return numeroSorteado;
         } else {
             return -1;
