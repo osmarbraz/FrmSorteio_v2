@@ -63,7 +63,7 @@ public class FrmSorteio extends javax.swing.JFrame {
             }
         });
 
-        jLabel2.setText("Quantidade de números a seren sorteados:");
+        jLabel2.setText("Quantidade de números a serem sorteados:");
 
         JBFechar.setText("Fechar");
         JBFechar.addActionListener(new java.awt.event.ActionListener() {
